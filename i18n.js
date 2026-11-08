@@ -5,9 +5,7 @@ const I18N = (() => {
   const lang = saved === 'zh' || saved === 'en' ? saved : /^zh\b/i.test(navigator.language || '') ? 'zh' : 'en';
 
   const EN = {
-    '连接中…': 'Connecting…', '连接超时': 'Timed out', '连接超时，重试中…': 'Timed out, retrying…',
-    '连接失败，重试中…': 'Connection failed, retrying…',
-    '对话': 'Chat', '画面': 'Screen', '↑ 加载更早的消息': '↑ Load earlier messages',
+    '连接中…': 'Connecting…', '对话': 'Chat', '画面': 'Screen', '↑ 加载更早的消息': '↑ Load earlier messages',
     '没找到聊天面板。': 'No chat panel found.', '请在 Cursor 里打开 Agent 对话，或切到「画面」查看。': 'Open an Agent chat in Cursor, or switch to "Screen".',
     '↓ 最新': '↓ Latest', '聊天面板': 'Chat panel', '整个窗口': 'Whole window', '点击': 'Tap', '滚动': 'Scroll', '刷新': 'Refresh',
     '回车': 'Enter', '⌘回车': '⌘Enter', '打开聊天': 'Open chat', '右键': 'Right-click', '历史': 'History', '＋ 新建': '+ New',
@@ -17,11 +15,7 @@ const I18N = (() => {
     '配对信息已失效（电脑端重置过），请重新配对': 'Pairing is no longer valid (the computer was reset). Please pair again.',
     '这台设备还没有配对。': 'This device is not paired yet.',
     '在电脑上运行 npm run pair，用手机扫码；或者把链接复制过来粘贴到下面。': 'Run npm run pair on the computer and scan the code, or paste the pairing link below.',
-    '粘贴配对链接': 'Paste pairing link', '配对': 'Pair', '验证': 'Verify',
-    '这不是配对链接（应包含 #pair=…）': 'That is not a pairing link (it should contain #pair=…)',
-    '这是访问地址，还不是配对链接。': 'That is an access address, not a pairing link.',
-    '请在电脑运行 npm run pair，把带 #pair=… 的整段链接粘贴到这里（也可以只粘贴 #pair= 后面的 key.code）。': 'Run npm run pair on the computer and paste the full link with #pair=… (or just the key.code after #pair=).',
-    '这不是配对链接（应包含 #pair=…，或只粘贴 key.code 那一段）': 'That is not a pairing link (it should contain #pair=…, or just the key.code segment).',
+    '粘贴配对链接': 'Paste pairing link', '配对': 'Pair', '验证': 'Verify', '这不是配对链接（应包含 #pair=…）': 'That is not a pairing link (it should contain #pair=…)',
     '请输入 Authenticator 里「Cursor Remote」的 6 位验证码': 'Enter the 6-digit "Cursor Remote" code from your Authenticator app',
     '正在配对…': 'Pairing…', '连不上电脑，配对链接 10 分钟内有效，稍后重试': 'Cannot reach the computer. The pairing link is valid for 10 minutes; try again shortly.',
     '配对失败': 'Pairing failed', '这台设备之前已经配对过，可以继续使用。': 'This device was paired before and can keep using it.', '继续使用': 'Continue',
@@ -30,8 +24,6 @@ const I18N = (() => {
     '在浏览器里继续': 'Continue in browser', '正在查找电脑…': 'Looking for the computer…', '读取失败，请检查手机网络（需要能打开 github.io）': 'Could not load. Check your phone\'s network (github.io must be reachable).',
     '还没有找到电脑地址。': 'The computer\'s address isn\'t published yet.', '请在电脑上运行 npm run public 并保持窗口开着，约 1 分钟后点重试。': 'Run npm run public on the computer and keep that window open, then tap Retry in about a minute.',
     '电脑不在线：可能关机、睡眠，或服务刚重启（新地址约 1 分钟后生效）。会自动重试…': 'Computer offline: it may be off, asleep, or the service just restarted (a new address takes about a minute). Retrying automatically…',
-    '连不上电脑：请确认手机 VPN 已连、电脑 npm start 仍开着。正在重试…': 'Cannot reach the computer. Check phone VPN and that npm start is still running. Retrying…',
-    '连不上电脑：请确认手机 VPN 已连、电脑 npm start 仍开着。会自动重试…': 'Cannot reach the computer. Check phone VPN and that npm start is still running. Retrying automatically…',
     '这台设备已被移除，请重新配对': 'This device was removed. Please pair again.',
     '切换 Cursor 窗口': 'Switch Cursor window', '没有找到窗口': 'No windows found', '本地': 'Local',
     '「Agents」是 Cursor 专门跑 Agent 的窗口；其他是普通编辑器窗口（IDE 模式），SSH 远程窗口也在这里。': '"Agents" is Cursor\'s dedicated Agent window; the others are regular editor windows (IDE mode), including SSH remotes.',
